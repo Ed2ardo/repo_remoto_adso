@@ -1,0 +1,153 @@
+
+/* Encabezado (Header) */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header p {
+    margin: 5px 0 0;
+}
+
+/* Menú de Navegación (Navigation) */
+nav {
+    background-color: #444;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: white;
+    padding: 15px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #333;
+}
+
+/* Contenedor Principal */
+.contenedor {
+    display: flex;
+}
+
+/* Menú lateral */
+.menu-lateral {
+    background-color: #333;
+    width: 200px;
+    padding: 20px;
+    height: 100vh;
+}
+
+.menu-lateral ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-lateral ul li {
+    margin: 15px 0;
+}
+
+.menu-lateral ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.menu-lateral ul li a:hover {
+    background-color: #444;
+}
+
+/* Contenido Principal */
+.contenido {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Grid de Espacios de Parking */
+.grid-parking {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
+}
+
+.parking-spot {
+    width: 50px;
+    height: 50px;
+    background-color: #d3d3d3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.parking-spot.occupied {
+    background-color: #ff5c5c;
+}
+
+.parking-spot.available {
+    background-color: #7fff7f;
+}
+
+.parking-spot:hover {
+    opacity: 0.8;
+}
+
+.parking-spot span {
+    font-size: 1.5em;
+    color: #fff;
+}
+
+
+/* Pie de Página (Footer) */
+.site-footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-nav {
+    margin-top: 10px;
+}
+
+.footer-nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}

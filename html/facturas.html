@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestión de Facturas</title>
+  <link rel="stylesheet" href="../css/facturas.css">
+</head>
+
+<body>
+  <!-- Encabezado -->
+  <header>
+    <h1>Parking Management System</h1>
+    <p>Gestión de Facturas</p>
+  </header>
+
+  <!-- Menú de Navegación -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="clientes.html">Clientes</a></li>
+      <li><a href="parking.html">Parking</a></li>
+      <li><a href="informes.html">Informes</a></li>
+      <li><a href="facturas.html">Facturas</a></li>
+      <li><a href="ajustes.html">Ajustes</a></li>
+    </ul>
+  </nav>
+
+  <div class="contenedor">
+
+    <main class="contenido">
+      <h1>Facturas</h1>
+
+      <!-- Filtros -->
+      <div class="filtros">
+        <input type="text" id="buscarCliente" placeholder="Buscar por cliente">
+        <label for="fechaInicio">Desde: </label>
+        <input type="date" id="fechaInicio">
+        <label for="fechaFin">Hasta: </label>
+        <input type="date" id="fechaFin">
+        <button id="filtrar">Filtrar</button>
+      </div>
+
+      <!-- Lista de Facturas -->
+      <div class="lista-facturas">
+        <table>
+          <thead>
+            <tr>
+              <th>Fecha</th>
+              <th>Cliente</th>
+              <th>Monto</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Facturas Generadas Dinámicamente -->
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p>&copy; 2024 Sistema de Gestión de Parqueaderos. Todos los derechos reservados.</p>
+      <nav class="footer-nav">
+        <a href="#">Política de Privacidad</a>
+        <a href="#">Términos de Servicio</a>
+        <a href="#">Contacto</a>
+      </nav>
+    </div>
+  </footer>
+
+
+  <script src="../js/facturas.js"></script>
+</body>
+
+</html>

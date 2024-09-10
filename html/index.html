@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestión de Parqueaderos</title>
+  <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+  <!-- Encabezado -->
+  <header>
+    <h1>Parking Management System</h1>
+    <p>Gestión de Parqueaderos Comerciales y Residenciales</p>
+  </header>
+
+  <!-- Menú de Navegación -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="clientes.html">Clientes</a></li>
+      <li><a href="parking.html">Parking</a></li>
+      <li><a href="informes.html">Informes</a></li>
+      <li><a href="facturas.html">Facturas</a></li>
+      <li><a href="ajustes.html">Ajustes</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contenedor principal -->
+  <div class="contenedor-principal">
+    <!-- Columna izquierda: Formulario de Ingreso y Espacios disponibles -->
+    <div class="columna-izquierda">
+      <!-- Formulario de Ingreso de Placa -->
+      <section class="form-placa">
+        <h2>Registrar Ingreso de Vehículo</h2>
+        <!-- Acción tentativa de donde mandaría la información una vez desarrolado el back-end, en este caso php por ejemplo o mas adelante en otro lenguaje como python o java... -->
+        <form action="ingreso.php" method="post">
+          <label for="placa">Placa</label>
+          <input type="text" id="placa" name="placa" placeholder="ABC123" required>
+          <button type="submit">Ingresar</button>
+        </form>
+        <p>Fecha y hora actual: <span id="fecha-hora"></span></p>
+      </section>
+
+      <!-- Panel de Espacios Disponibles -->
+      <section class="espacios-disponibles">
+        <h2>Espacios Disponibles</h2>
+        <ul>
+          <li>Espacio A1</li>
+          <li>Espacio A2</li>
+          <li>Espacio A3</li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- Columna derecha: Panel de Control de Espacios de Parqueo -->
+    <section class="panel-parqueo">
+      <h2>Control de Espacios de Parqueo</h2>
+      <div class="vehiculo">
+        <h3>Placa: ABC123</h3>
+        <p>Vehículo: Carro</p>
+        <p>Tiempo activo: <span>5:00</span></p>
+        <button class="btn-primario">Facturar</button>
+        <button class="btn-secundario">Reporte</button>
+        <button class="btn-secundario">Registrar</button>
+      </div>
+      <div class="vehiculo">
+        <h3>Placa: ABC321</h3>
+        <p>Vehículo: Carro</p>
+        <p>Tiempo activo: <span>5:00</span></p>
+        <button class="btn-primario">Facturar</button>
+        <button class="btn-secundario">Reporte</button>
+        <button class="btn-secundario">Registrar</button>
+      </div>
+      <div class="vehiculo">
+        <h3>Placa: ABK547</h3>
+        <p>Vehículo: Carro</p>
+        <p>Tiempo activo: <span>5:00</span></p>
+        <button class="btn-primario">Facturar</button>
+        <button class="btn-secundario">Reporte</button>
+        <button class="btn-secundario">Registrar</button>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p>&copy; 2024 Sistema de Gestión de Parqueaderos. Todos los derechos reservados.</p>
+      <nav class="footer-nav">
+        <a href="#">Política de Privacidad</a>
+        <a href="#">Términos de Servicio</a>
+        <a href="#">Contacto</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="../js/index.js"></script>
+</body>
+
+</html>

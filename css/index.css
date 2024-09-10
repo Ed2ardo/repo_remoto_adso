@@ -1,0 +1,234 @@
+/* Encabezado (Header) */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header p {
+    margin: 5px 0 0;
+}
+
+/* Menú de Navegación (Navigation) */
+nav {
+    background-color: #444;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: white;
+    padding: 15px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #333;
+}
+
+/* Contenedor Principal */
+.contenedor-principal {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Columna Izquierda (Formulario y Espacios Disponibles) */
+.columna-izquierda {
+    flex: 1;
+    margin-right: 20px;
+    /* Espaciado entre columnas */
+}
+
+/* Panel de Control de Espacios de Parqueo */
+.panel-parqueo {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Formulario de Ingreso de Placa */
+.form-placa {
+    background-color: #fff;
+    padding: 20px;
+    max-width: 400px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-placa h2 {
+    text-align: center;
+}
+
+.form-placa label,
+.form-placa input,
+.form-placa button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.form-placa input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-placa button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+.form-placa button:hover {
+    background-color: #555;
+}
+
+#fecha-hora {
+    text-align: center;
+    font-size: 0.9em;
+    color: #888;
+}
+
+/* Panel de Espacios Disponibles */
+.espacios-disponibles {
+    background-color: #fff;
+    padding: 20px;
+    max-width: 400px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.espacios-disponibles h2 {
+    text-align: center;
+}
+
+.espacios-disponibles ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.espacios-disponibles ul li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.espacios-disponibles ul li:hover {
+    background-color: #eee;
+}
+
+/* Panel de Control de Espacios de Parqueo */
+.panel-parqueo {
+    background-color: #fff;
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.panel-parqueo h2 {
+    text-align: center;
+}
+
+.vehiculo {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+.vehiculo h3 {
+    margin: 0;
+    color: #444;
+}
+
+.vehiculo p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.btn-primario {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.btn-secundario {
+    background-color: #666;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-primario:hover {
+    background-color: #555;
+}
+
+.btn-secundario:hover {
+    background-color: #888;
+}
+
+/* Pie de Página (Footer) */
+.site-footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-nav {
+    margin-top: 10px;
+}
+
+.footer-nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}

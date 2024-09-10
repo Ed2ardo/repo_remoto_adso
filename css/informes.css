@@ -1,0 +1,136 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.informes-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Menú de Navegación (Navigation) */
+nav {
+    background-color: #444;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: white;
+    padding: 15px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #333;
+}
+
+/* Estilo para títulos */
+h1, h2 {
+    color: #333;
+    text-align: center;
+}
+
+/* Resumen estadístico */
+.resumen {
+    margin-bottom: 40px;
+}
+
+.estadisticas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stat {
+    text-align: center;
+    padding: 20px;
+    background-color: #e6f7ff;
+    border-radius: 10px;
+    width: 22%;
+}
+
+.stat h3 {
+    font-size: 18px;
+    color: #333;
+}
+
+.stat p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Gráficos */
+.graficos {
+    margin-bottom: 40px;
+}
+
+/* Tabla de detalles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table thead {
+    background-color: #007bff;
+    color: white;
+}
+
+table th, table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+/* Pie de Página (Footer) */
+.site-footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-nav {
+    margin-top: 10px;
+}
+
+.footer-nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
